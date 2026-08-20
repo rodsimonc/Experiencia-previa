@@ -44,6 +44,19 @@ descargar, limpiar, analizar, alinear, inferir filogenias y analizar datos ómic
 | **Estructura de proteínas / modelado** | modelado por homología, PDB, análisis estructural, docking |
 | Homología y redes | BLAST, logos de secuencia (Shannon/Kullback), Cytoscape |
 
+## 📈 [`ciencia-de-datos/`](./ciencia-de-datos) — data science en Python y SQL
+
+Análisis de datos y ciencia de datos aplicados a **datos de cualquier dominio**:
+del dataset crudo a insights, modelos y visualizaciones. *(En construcción — sumando
+proyectos.)*
+
+| Puedo… | Herramientas |
+|---|---|
+| Análisis exploratorio (EDA) | `pandas`, `NumPy`, `Matplotlib`/`Seaborn` |
+| Consultas analíticas | **SQL** (agregaciones, JOINs, window functions) |
+| Machine learning de punta a punta | `scikit-learn` (pipelines, validación cruzada, métricas) |
+| Visualización y dashboards | Plotly/Dash, Power BI *(en camino)* |
+
 ## 🛠️ Herramientas y entorno
 
 **R** · **Python** (pandas, numpy, scikit-learn, Biopython) · **SQL** y bases de datos ·
