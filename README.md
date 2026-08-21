@@ -1,77 +1,72 @@
-# Experiencia previa — Bioestadística y Bioinformática
+# Experiencia previa — Data Science, Biostatistics & Bioinformatics
 
-Hola, soy **Carlos Rodríguez Simón**. Este repositorio es una muestra concreta de lo
-que sé hacer con datos biológicos: desde que llegan crudos hasta que salen conclusiones
-con soporte estadístico y figuras publicables.
+**🌐 English (below) · [Español ⬇️](#-español)**
 
-No es código de juguete: son *workflows* reales, comentados paso a paso, que reflejan
-mi formación en estadística multivariada y bioinformática, y dos años trabajando con
-datos en R y Python (con Google Colab, línea de comandos y herramientas del área).
+Hi, I'm **Carlos Rodríguez Simón**. This repository is a concrete sample of what I can
+do with data: from raw inputs to conclusions backed by statistics and publication-ready
+figures.
 
----
+This isn't toy code — these are real, step-by-step commented *workflows* reflecting my
+training in multivariate statistics and bioinformatics, plus two years working with data
+in R and Python.
 
-## 📊 [`bioestadística/`](./bioestad%C3%ADstica) — análisis de datos en R
+## What's inside
 
-Qué hago cuando me llega una tabla de datos: explorar, elegir modelo, verificar
-supuestos, estimar con remuestreo y comunicar con figuras.
+### 📊 [`bioestadística/`](./bioestad%C3%ADstica) — data analysis in R
+What I do when a data table arrives: explore, choose a model, check assumptions, estimate
+with resampling, and communicate with figures. Inference & non-parametric tests, multiple
+regression + model selection, **GLM & mixed models**, non-linear regression, **PCA**,
+**discriminant analysis (LDA) + MANOVA**, **clustering** with bootstrap support,
+**Bayesian analysis**, **machine learning** (Random Forest, cross-validation), and
+`ggplot2` visualization / heatmaps.
 
-| Puedo… | Herramientas |
-|---|---|
-| Inferencia clásica y comparación de grupos | `t.test`, `binom.test`, `prop.test`, tests **no paramétricos** (`wilcox.test`, `kruskal.test`) |
-| Regresión múltiple + selección de modelos | `lm`, `MuMIn::dredge`, PRESS, Mallow's Cp, VIF, `visreg` |
-| **GLM y modelos mixtos** | `glm` (Poisson, binomial), `lme4`/`nlme` (efectos aleatorios, datos anidados) |
-| Regresión **no lineal** (curvas de crecimiento) | `optim`, `nls`, Weibull / Gompertz / Monomolecular / Chapman |
-| **PCA** y ordenación | `princomp`, `ade4::dudi.pca`, biplots, bootstrap de *loadings* |
-| **Discriminante (LDA)** + MANOVA | `MASS::lda`, `manova`, Mahalanobis, `biotools::boxM` |
-| **Clustering**, distancias y **mapas de calor** | `hclust`, `dist`, correlación cofenética, bootstrap, `heatmap`/`pheatmap` |
-| **Análisis bayesiano** | inferencia bayesiana / MCMC (`brms` / Stan), intervalos de credibilidad |
-| **Machine learning** | `caret`/`randomForest`, validación cruzada, curvas ROC |
-| **Visualización** | `ggplot2` + `tidyverse` (dplyr, tidyr) |
+### 🧬 [`bioinformática/`](./bioinform%C3%A1tica) — sequences & genomics
+Retrieving, cleaning, analyzing and comparing biological sequences: NCBI download
+(EDirect / **Biopython**), EMBOSS analysis, multiple alignment & **phylogenetics (PhyML)**,
+**RNA-seq / differential expression**, **microbiome / metabarcoding**, **protein structure /
+homology modeling**, and reproducible pipelines.
 
-## 🧬 [`bioinformática/`](./bioinform%C3%A1tica) — secuencias y genómica
+### 📈 [`ciencia-de-datos/`](./ciencia-de-datos) — data science in Python & SQL
+Data analysis and data science on data from **any domain**: EDA, feature engineering,
+end-to-end ML pipelines, honest model evaluation, clustering/segmentation, A/B testing,
+analytical SQL, and structured **LLM evaluation**.
 
-Qué hago cuando me llega un set de secuencias, IDs o datos de secuenciación:
-descargar, limpiar, analizar, alinear, inferir filogenias y analizar datos ómicos.
+## Tech stack
 
-| Puedo… | Herramientas |
-|---|---|
-| Descargar secuencias masivamente desde **NCBI** | EDirect (`efetch`), **Biopython** (`Bio.Entrez`, `SeqIO`) |
-| Manejar y reformatear FASTA/multiFASTA | Python, Biopython, `argparse` |
-| Analizar secuencias (ORFs, traducción, motivos, estructura 2ª) | Suite **EMBOSS** |
-| Alinear y construir árboles filogenéticos | Clustal / MAFFT / MUSCLE, **PhyML**, Mesquite, Dendroscope |
-| **RNA-seq / expresión diferencial** | conteo de *reads*, `DESeq2` / `edgeR`, volcano plots |
-| **Microbioma / metabarcoding** | `mothur` / QIIME, curvas de rarefacción, diversidad α/β |
-| **Estructura de proteínas / modelado** | modelado por homología, PDB, análisis estructural, docking |
-| Homología y redes | BLAST, logos de secuencia (Shannon/Kullback), Cytoscape |
-
-## 📈 [`ciencia-de-datos/`](./ciencia-de-datos) — data science en Python y SQL
-
-Análisis de datos y ciencia de datos aplicados a **datos de cualquier dominio**:
-del dataset crudo a insights, modelos y visualizaciones. *(En construcción — sumando
-proyectos.)*
-
-| Puedo… | Herramientas |
-|---|---|
-| Análisis exploratorio (EDA) | `pandas`, `NumPy`, `Matplotlib`/`Seaborn` |
-| Consultas analíticas | **SQL** (agregaciones, JOINs, window functions) |
-| Machine learning de punta a punta | `scikit-learn` (pipelines, validación cruzada, métricas) |
-| Visualización y dashboards | Plotly/Dash, Power BI *(en camino)* |
-
-## 🛠️ Herramientas y entorno
-
-**R** · **Python** (pandas, numpy, scikit-learn, Biopython) · **SQL** y bases de datos ·
-**Linux / bash** (scripting, pipes, procesamiento por línea de comandos) ·
-**pipelines reproducibles** (Snakemake / Nextflow, Docker) · Git · Google Colab.
+**R** · **Python** (pandas, NumPy, scikit-learn, SciPy, statsmodels, Biopython) · **SQL** ·
+Linux/bash · reproducible pipelines · Git · Google Colab.
 
 ---
 
-## Cómo trabajo (mi flujo general)
+## 🇪🇸 Español
 
-1. **Entender el dato** antes de tocarlo: qué mide cada variable, escalas, faltantes, sesgos de muestreo.
-2. **Explorar** con gráficos y resúmenes antes de modelar.
-3. **Elegir el método** según la pregunta y la estructura del dato, no al revés.
-4. **Verificar supuestos** (normalidad, homogeneidad de varianzas, colinealidad, etc.).
-5. **Estimar la incertidumbre**, muchas veces con **remuestreo (bootstrap)** o intervalos bayesianos.
-6. **Comunicar** con figuras claras y una interpretación honesta de lo que el dato permite (y lo que no).
+Hola, soy **Carlos Rodríguez Simón**. Este repositorio es una muestra concreta de lo que
+sé hacer con datos: desde que llegan crudos hasta que salen conclusiones con soporte
+estadístico y figuras publicables. No es código de juguete: son *workflows* reales,
+comentados paso a paso, de mi formación en estadística multivariada y bioinformática, y
+dos años trabajando con datos en R y Python.
 
-Cada carpeta tiene su propio `README` con el detalle y los ejemplos comentados.
+### 📊 [`bioestadística/`](./bioestad%C3%ADstica) — análisis de datos en R
+Qué hago cuando me llega una tabla de datos: explorar, elegir modelo, verificar supuestos,
+estimar con remuestreo y comunicar con figuras. Inferencia y tests no paramétricos,
+regresión múltiple + selección de modelos, **GLM y modelos mixtos**, regresión no lineal,
+**PCA**, **discriminante (LDA) + MANOVA**, **clustering** con soporte por bootstrap,
+**análisis bayesiano**, **machine learning** (Random Forest, validación cruzada) y
+visualización con `ggplot2` / mapas de calor.
+
+### 🧬 [`bioinformática/`](./bioinform%C3%A1tica) — secuencias y genómica
+Obtener, limpiar, analizar y comparar secuencias biológicas: descarga de NCBI
+(EDirect / **Biopython**), análisis con EMBOSS, alineamiento múltiple y **filogenia
+(PhyML)**, **RNA-seq / expresión diferencial**, **microbioma / metabarcoding**,
+**estructura de proteínas / modelado por homología**, y pipelines reproducibles.
+
+### 📈 [`ciencia-de-datos/`](./ciencia-de-datos) — data science en Python y SQL
+Análisis de datos y ciencia de datos sobre datos de **cualquier dominio**: EDA, feature
+engineering, pipelines de ML end-to-end, evaluación honesta de modelos,
+clustering/segmentación, A/B testing, SQL analítico y **evaluación estructurada de LLMs**.
+
+### Stack técnico
+**R** · **Python** (pandas, NumPy, scikit-learn, SciPy, statsmodels, Biopython) · **SQL** ·
+Linux/bash · pipelines reproducibles · Git · Google Colab.
+
+> Cada carpeta tiene su propio `README` con el detalle y los ejemplos comentados (en español).
